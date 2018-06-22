@@ -58,7 +58,7 @@ void showCurrentRup(){
 
 	SDL_DrawImage(renderer, GreenRupee, 1077, 18, 35, 55);
 	char rupString[10];
-	snprintf(rupString, sizeof rupString, " : %d", rupeeValue);
+	snprintf(rupString, sizeof rupString, " : %ld", rupeeValue);
 	SDL_DrawText(Arial_S, 1112, 33, WHITE_TEXT_COLOR, rupString);
 
 
@@ -189,7 +189,7 @@ void showItemSDL(int currentItem, int arrow){
 	SDL_DrawRect(renderer, 470, 200, 750, 3, LEFTBAR_COLOR);
 
 	char value[25];
-	snprintf(value, sizeof value, "%d", newQuantItems[currentItem]);
+	snprintf(value, sizeof value, "%ld", newQuantItems[currentItem]);
 
 	SDL_DrawRect(renderer, 470, 240, 750, 3, LEFTBAR_COLOR);
 	SDL_DrawText(Arial_M, 480, 252, WHITE_TEXT_COLOR, "Quantity");
@@ -200,7 +200,7 @@ void showItemSDL(int currentItem, int arrow){
 	if(strcmp(translateMods(new_modNames[currentItem]), "(none)")==0){
 			new_quantMod[currentItem] = 0;
 	}
-	snprintf(othervalue, sizeof othervalue, "%d", new_quantMod[currentItem]);
+	snprintf(othervalue, sizeof othervalue, "%ld", new_quantMod[currentItem]);
 
 	if(arrow == 0){
 		SDL_DrawRect(renderer, 470, 320, 750, 3, LEFTBAR_COLOR);

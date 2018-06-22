@@ -212,7 +212,11 @@ void MenuButtonsSlot(int x){
             slot--;
             if(slot == -1)
                 slot = 7;
-            break;  
+            break;
+		if slot = 6
+			SDL_DrawText(Arial_S,554,275, RED_TEXT_COLOR, "MASTER MODE");
+			break;
+		
     }
 
     selectSlotMenu(slot);
