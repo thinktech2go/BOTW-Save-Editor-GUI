@@ -199,19 +199,19 @@ void KeyboardButtons(int x){
     showKeyboard(key);
 
 }
-
+//Slot selecttion screen originall 6,5 //
 void MenuButtonsSlot(int x){
 
     switch(x){
         case 2:
             slot++;
-            if(slot == 6)
+            if(slot == 8)
                 slot = 0;
             break;
         case 3:
             slot--;
             if(slot == -1)
-                slot = 5;
+                slot = 7;
             break;  
     }
 
